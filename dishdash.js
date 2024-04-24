@@ -1,4 +1,4 @@
-const tenant = document.currentScript.dataset.tenant;
+const tenant = "dishdash123";
 
 const link = document.createElement("link");
 link.rel = "stylesheet";
