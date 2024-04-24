@@ -1,7 +1,14 @@
+const tenant = document.currentScript.dataset.tenant;
+
 const link = document.createElement("link");
 link.rel = "stylesheet";
 link.href = "https://kiffiecoetzee.github.io/index.css";
 document.head.appendChild(link);
+
+var divElement = document.createElement("div");
+divElement.id = "dishdash";
+divElement.setAttribute("tenant", tenant);
+document.body.appendChild(divElement);
 
 // Load external JavaScript file from CDN
 const script = document.createElement("script");
